@@ -1,7 +1,7 @@
 
 // Example URL: http://stats.nba.com/stats/scoreboard/?GameDate=02/22/2018&LeagueID=00&DayOffset=0
 function getScoreboardUrl(date) {
-    return 'http://stats.nba.com/stats/scoreboard/?GameDate=' + date.format("MM/DD/YYYY") + '&LeagueID=00&DayOffset=0';
+    return 'https://stats.nba.com/stats/scoreboard/?GameDate=' + date.format("MM/DD/YYYY") + '&LeagueID=00&DayOffset=0';
 }
 
 function outputScoreboard(scoreboard) {
