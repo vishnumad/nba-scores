@@ -156,7 +156,7 @@ var localTz = moment.tz.guess();
 
 // Fetch data from NBA Stats website with jsonp
 $.ajax({
-    url: getScoreboardUrl(moment()),
+    url: getScoreboardUrl(moment().tz("America/New_York")),
     dataType: 'jsonp',
     jsonpCallback: 'outputScoreboard'
 });
